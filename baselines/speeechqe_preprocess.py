@@ -40,7 +40,7 @@ def jsonl_to_tsv_dynamic(input_file, output_file, split_name="iwslt26.dev"):
         tgt_lang, lang_config['de'])  # Default to German if not found
 
     row = {
-        'path': item['audio_filename'],
+        'path': item['audio_path'],
         'sentence': str(int(item['score'])),
         'split': split_name,
         'lang': item['src_lang'],
